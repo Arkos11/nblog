@@ -80,3 +80,23 @@ a:hover {
     display: none;
     padding: 0 18px;
 }
+.directory-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.directory-list li {
+    margin: 10px 0;
+}
+
+.directory-list a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.directory-list a:hover {
+    text-decoration: underline;
+}
