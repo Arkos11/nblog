@@ -3,31 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
+    <title>Anime List</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .anime-section {
+            margin-bottom: 20px;
+        }
+        .anime-description {
+            display: none;
+            margin-top: 10px;
+        }
+        .anime-title:checked + .anime-description {
+            display: block;
+        }
+        .anime-title {
+            display: none;
+        }
+        .anime-label {
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .anime-label:hover {
+            background-color: #555555;
+        }
+        .anime-image {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="top-left"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Click for Extra Protein</a></div>
-        <div class="top-right"><a href="images/music-junkies-meme.jpg" target="_blank">Stages of Music Junkies</a></div>
-        <h1>My Blog</h1>
+        <h1>Anime List</h1>
     </header>
     <main>
-        <nav>
-            <ul class="tabs">
-                <li><a href="anime-list.html">Anime List</a></li>
-                <li><a href="kool-theorems.html">Kool Theorems</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="links.html">Links</a></li>
-            </ul>
-        </nav>
-        <div class="gif-container">
-            <img src="images/your-gif.gif" alt="A cool gif">
-        </div>
+        <section class="anime-section">
+            <input type="checkbox" id="anime1" class="anime-title">
+            <label for="anime1" class="anime-label">Baccano</label>
+            <div class="anime-description">
+                <img src="images/baccano.jpg" alt="Baccano" class="anime-image">
+                <p>Description for Baccano.</p>
+            </div>
+        </section>
+        <section class="anime-section">
+            <input type="checkbox" id="anime2" class="anime-title">
+            <label for="anime2" class="anime-label">Rurouni Kenshin (Trust and Betrayal) OVA</label>
+            <div class="anime-description">
+                <img src="images/rurouni-kenshin.jpg" alt="Rurouni Kenshin" class="anime-image">
+                <p>Description for Rurouni Kenshin (Trust and Betrayal) OVA.</p>
+            </div>
+        </section>
+        <section class="anime-section">
+            <input type="checkbox" id="anime3" class="anime-title">
+            <label for="anime3" class="anime-label">Sonny Boy</label>
+            <div class="anime-description">
+                <img src="images/sonny-boy.jpg" alt="Sonny Boy" class="anime-image">
+                <p>Description for Sonny Boy.</p>
+            </div>
+        </section>
+        <section class="anime-section">
+            <input type="checkbox" id="anime4" class="anime-title">
+            <label for="anime4" class="anime-label">Hajime No Ippo</label>
+            <div class="anime-description">
+                <img src="images/hajime-no-ippo.jpg" alt="Hajime No Ippo" class="anime-image">
+                <p>Description for Hajime No Ippo.</p>
+            </div>
+        </section>
+        <section class="anime-section">
+            <input type="checkbox" id="anime5" class="anime-title">
+            <label for="anime5" class="anime-label">Higurashi (When They Cry) 2006</label>
+            <div class="anime-description">
+                <img src="images/higurashi.jpg" alt="Higurashi" class="anime-image">
+                <p>Description for Higurashi (When They Cry) 2006.</p>
+            </div>
+        </section>
+        <a href="index.html">Back to Main Page</a>
     </main>
     <footer>
-        <div class="bottom-right"><a href="#" target="_blank">Here's the reason why you're still a virgin in 2024</a></div>
         <p>&copy; 2024 My Blog. All rights reserved.</p>
     </footer>
 </body>
 </html>
+

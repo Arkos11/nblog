@@ -32,18 +32,15 @@ header .top-right {
 }
 
 header .top-left a, header .top-right a {
-    color: #ff00ff;
     text-decoration: none;
     font-weight: bold;
-    background-color: #ffff00;
     padding: 5px 10px;
     border-radius: 5px;
     transform: rotate(-10deg);
 }
 
 header .top-left a:hover, header .top-right a:hover {
-    background-color: #ff00ff;
-    color: #ffff00;
+    text-decoration: underline;
 }
 
 footer {
@@ -69,18 +66,15 @@ footer .bottom-right {
 }
 
 footer .bottom-right a {
-    color: #ff00ff;
     text-decoration: none;
     font-weight: bold;
-    background-color: #ffff00;
     padding: 5px 10px;
     border-radius: 5px;
     transform: rotate(-10deg);
 }
 
 footer .bottom-right a:hover {
-    background-color: #ff00ff;
-    color: #ffff00;
+    text-decoration: underline;
 }
 
 main {
